@@ -1,20 +1,21 @@
 CC := gcc
 CFLAGS := -Wall -g
-OBJ := $(wildcard *.o) 
+OBJ := multipipe.o readinput.o execline.o parseline.o parsepipe.o execpipe.o builtin.o main.o 
 
 
 
 all: $(OBJ)
-	$(CC) $^ -o new-shell
+	$(CC) $(OBJ) -o new-shell
 
 main.o: main.c 
-	$(CC) $(CFLAGS) -c main.c
+	$(CC) $(CFLAGS) -c	main.c
 
 multipipe.o: multipipe.c multipipe.h
 	$(CC) $(CFLAGS) -c multipipe.c
 
 readinput.o: readinput.c readinput.h
 	$(CC) $(CFLAGS) -c readinput.c
+
 
 execline.o: execline.c execline.h
 	$(CC) $(CFLAGS) -c execline.c

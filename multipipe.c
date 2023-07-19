@@ -29,8 +29,8 @@ int multi_pipe(char *pipe_line, int pipe_counter){
 
         commands[cnt] = command;
         cnt += 1;
-        //have to free command
-        //printf("command %s\n", command);
+
+
         pipe_counter -= 1;
         n += 2;
     }
