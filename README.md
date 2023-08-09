@@ -10,4 +10,4 @@ make
 ./new-shell
 ```
 
-Contributions and corrections are higly welcome
+Contributions and collaborations are higly welcome 😌
